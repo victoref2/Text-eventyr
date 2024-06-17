@@ -23,11 +23,11 @@ namespace Text_eventyr
             Room oldTree = new Room("Old Tree", 8, "An enormous, ancient tree. Its twisted roots form a maze on the ground.", 0);
             Room darkPond = new Room("Dark Pond", 9, "A dark, still pond. The water looks almost black, and you can't see the bottom. You decide to take a sip.", 4);
             Room fallenLog = new Room("Fallen Log", 10, "A giant fallen log blocks your path. You can crawl under it or climb over. But when you get to the other side, you slip in the mud and hit your head.", 4);
-            Room thornyTunnel = new Room("Thorny Tunnel", 11, "A tunnel formed by thorny bushes. It's narrow and difficult to pass through. Take 5 Damage.", 5);
+            Room thornyTunnel = new Room("Thorny Tunnel", 11, "A tunnel formed by thorny bushes. It's narrow and difficult to pass through. Take 3 Damage.", 3);
             Room murkyStream = new Room("Murky Stream", 12, "A slow-moving, murky stream. The water is thick and smells unpleasant.", 0);
             Room overgrownRuins = new Room("Overgrown Ruins", 13, "The ruins of an ancient structure, now overgrown with vines and moss.", 0);
             Room whisperingGlade = new Room("Whispering Glade", 14, "A glade where the wind seems to whisper through the leaves.", 0);
-            Room twistedRoots = new Room("Twisted Roots", 15, "A dense network of twisted roots. It's easy to trip if you're not careful, and you fell 4 damage.", 4);
+            Room twistedRoots = new Room("Twisted Roots", 15, "A dense network of twisted roots. It's easy to trip if you're not careful, and you fell 2 damage.", 2);
             Room exitRoom = new Room("EXIT", 16, "You see a bright light ahead, signaling the end of your journey. You can only leave if you have exactly 1 HP.", 0);
 
             // Set room exits
@@ -81,7 +81,7 @@ namespace Text_eventyr
             Item thornyBranch = new Item(4, 2, "A thorny branch you found on the ground. It might be useful.");
             startRoom.AddItem(thornyBranch);
 
-            Item glowingStone = new Item(5, 3, "A glowing stone that emits a faint light.");
+            Item glowingStone = new Item(5, 2, "A glowing stone that emits a faint light.");
             mossyCave.AddItem(glowingStone);
 
             Item mysteriousScroll = new Item(6, 2, "A scroll with mysterious writings. It seems valuable.");
